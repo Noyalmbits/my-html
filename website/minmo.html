@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinMO</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #123b6d;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #0b63b6;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 25px;
+            color: #123b6d;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2196f3;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            padding: 40px 8%;
+            background-color: #eef8ff;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text span {
+            color: #2196f3;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background-color: #0b63b6;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .btn:hover {
+            background-color: #084b8a;
+        }
+
+        .hero-image {
+            width: 50%;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 80%;
+            border-radius: 20px;
+        }
+
+        .categories {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .categories h2 {
+            font-size: 34px;
+        }
+
+        .category-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            width: 180px;
+            padding: 25px;
+            background-color: #f5faff;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+        }
+
+        .category h3 {
+            color: #0b63b6;
+        }
+
+        footer {
+            background-color: #0b63b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text,
+            .hero-image {
+                width: 100%;
+            }
+
+            .hero-text h1 {
+                font-size: 38px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        BabyNest
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            Premium Baby Products
+            <span>for a Happier Tomorrow</span>
+        </h1>
+
+        <p>
+            Discover soft baby clothing, toys, feeding products
+            and gentle baby care essentials for your little one.
+        </p>
+
+        <a href="#" class="btn">
+            Shop Now
+        </a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+        src="baby.jpg"
+        alt="Happy Baby">
+
+    </div>
+
+</section>
+
+
+<section class="categories">
+
+    <p>SHOP BY CATEGORY</p>
+
+    <h2>
+        Everything Your Baby Needs
+    </h2>
+
+
+    <div class="category-boxes">
+
+        <div class="category">
+            <h3>👕 Baby Clothing</h3>
+            <p>Soft and comfortable dresses.</p>
+        </div>
+
+
+        <div class="category">
+            <h3>🧸 Toys</h3>
+            <p>Fun and educational baby toys.</p>
+        </div>
+
+
+        <div class="category">
+            <h3>🍼 Feeding</h3>
+            <p>Bottles and feeding accessories.</p>
+        </div>
+
+
+        <div class="category">
+            <h3>🧴 Baby Care</h3>
+            <p>Gentle care products for babies.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 BabyNest | Premium Baby Products
+    </p>
+
+</footer>
+
+</body>
+</html>
